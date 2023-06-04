@@ -5,8 +5,630 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+<style>
+	body {
+		font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+	}
+	li {
+		list-style: none;
+		display: inline-block;
+		padding-left: 16px;
+		padding-right: 16px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+        
+	}
+
+	li a {
+	text-decoration: none;
+        color: white;
+        font-size: 16px;
+}
+
+	nav {
+		text-align: center;
+		position: fixed;
+		top: 0px;
+		width: 1440px;
+		text-decoration: none;
+		background-color: #726F6F;
+        z-index: 1;
+	}
+
+    
+    ul {
+		margin: 0;
+		padding: 0;
+	}
+
+    .page1 {
+        background-color: #F1E8E0;
+        width: 1440px;
+        height: 920px;
+        left: 3px;
+        top: 0px; 
+    }
+
+    .hello {
+    color: #726F6F;
+    font-family: cantata-one;
+    font-size: 50px;
+    font-weight: 400px;
+    letter-spacing: 0;
+    padding-top: 300px ;
+    padding-left: 180px ;
+    }
+
+    .i-am-cassandra-lawrent {
+    color: #726F6F;
+    font-family: cantata-one;
+    font-size: 45px;
+    font-weight: 400px;
+    letter-spacing: 0;
+    padding-top: 10px;
+    padding-left: 180px;
+    }
+
+    .a-fashion-designer {
+    color: #726F6F;
+    font-family: cantata-one;
+    font-size: 45px;
+    font-weight: 400px;
+    letter-spacing: 0;
+    padding-top: 10px;
+    padding-left: 180px;
+    }
+
+    .rectangle1green {
+    background-color:#C4C8BA;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: 900px;
+    width: 400px;
+    }
+
+    .rectangle2white {
+    background-color: #ffffff; 
+    height: 500px;
+    position: absolute;
+    top: 150px;
+    left: 850px;
+    width: 400px;
+    opacity: 75%;;
+    }
+
+    .profilepic {
+    height: 450px; 
+    left: 875px;
+    object-fit: cover;
+    position: absolute;
+    top: 175px;
+    width: 350px;
+    }
+
+
+    .page2 {
+        background-color: #C4C8BA;
+        width: 1440px;
+        height: 920px;
+        left: 3px;
+        top: 0px; 
+    }
+    
+    .about-me {
+    font-family: cantata-one;
+    font-size: 55px;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+    left: 80px;
+    top: 970px;
+    height: 82px;
+    width: 356px;
+    position: absolute;
+    }
+
+    .stylingpic {
+    position: absolute;
+    height: 300px; 
+    object-fit: cover; 
+    width: 222px;
+    left: 100px;
+    top: 1050px;
+    }
+    
+    .word1{
+    font-family: cantata-one;
+    font-size: 30px;
+    color: #ffffff;
+    width: 900px;
+    height: 217px;
+    left: 400px;
+    top: 1075px;
+    position: absolute;
+    }
+
+    .hobbies {
+    font-family: cantata-one;
+    font-size: 55px;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+    left: 80px;
+    top: 1370px;
+    width: 211px;
+    height: 75px;
+    position: absolute;
+    }
+
+    .hobbies1 {
+    height: 115px;
+    width: 115px;
+    top: 1450px;
+    left: 100px;
+    position: absolute;
+    }
+
+    .hobbies2 {
+    height: 115px;
+    width: 115px;
+    top: 1450px;
+    left: 250px;
+    position: absolute;
+    }
+
+    .hobbies3 {
+    height: 115px;
+    width: 115px;
+    top: 1450px;
+    left: 400px;
+    position: absolute;
+    }
+
+    .hobbies4 {
+    height: 115px;
+    width: 115px;
+    top: 1450px;
+    left: 550px;
+    position: absolute;
+    }
+
+    .skill {
+    font-family: cantata-one;
+    font-size: 55px;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+    left: 80px;
+    top: 1600px;
+    height: 82px;
+    width: 356px;
+    position: absolute;
+    }
+
+    .styling {
+    font-family: cantata-one;
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+    left: 90px;
+    top: 1650px;
+    height: 82px;
+    width: 356px;
+    position: absolute;
+    }
+
+    .designing {
+    font-family: cantata-one;
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+    left: 90px;
+    top: 1730px;
+    height: 82px;
+    width: 356px;
+    position: absolute;
+    }
+
+    .sketching {
+    font-family: cantata-one;
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+    left: 360px;
+    top: 1650px;
+    height: 82px;
+    width: 356px;
+    position: absolute;
+    }
+
+    .creative-artwork {
+    font-family: cantata-one;
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+    left: 360px;
+    top: 1730px;
+    height: 82px;
+    width: 356px;
+    position: absolute;
+    }
+
+    .experience {
+    font-family: cantata-one;
+    font-size: 55px;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+    left: 700px;
+    top: 1370px;
+    height: 82px;
+    width: 356px;
+    position: absolute;
+    }
+
+    .dream-land-lifestyle {
+    align-self: center;
+    letter-spacing: 0;
+    color: #ffffff;
+    font-size: 25px;
+    width: 579px;
+    height: 31px;
+    top: 1425px;
+    left: 725px;
+    position: absolute;
+    }
+
+    .word2{
+    align-self: center;
+    letter-spacing: 0;
+    color: #ffffff;
+    font-size: 25px;
+    width: 579px;
+    height: 31px;
+    top: 1475px;
+    left: 725px;
+    position: absolute;
+    }
+
+    .beauty-of-fashion {
+    align-self: center;
+    letter-spacing: 0;
+    color: #ffffff;
+    font-size: 25px;
+    width: 579px;
+    height: 31px;
+    top: 1600px;
+    left: 725px;
+    position: absolute;
+    }
+
+    .word3 {
+    align-self: center;
+    letter-spacing: 0;
+    color: #ffffff;
+    font-size: 25px;
+    width: 579px;
+    height: 31px;
+    top: 1650px;
+    left: 725px;
+    position: absolute;
+    }
+    
+    .page3 {
+        background-color: #F1E8E0;
+        width: 1440px;
+        height: 920px;
+        left: 3px;
+        top: 0px; 
+    }
+
+    .project{
+        font-family: cantata-one;
+        font-size: 50px;
+        color: #90A78C;
+        width: 400px;
+        height: 57px;
+        top: 1900px;
+        left: 80px;
+        position: absolute;
+    }
+
+    .line1{
+        width: 6px;
+        top: 1890px;
+        left: 400px;
+        position: absolute;
+    }
+
+    .projecttitle1{
+        font-family: cantata-one;
+        font-size: 50px;
+        color: #90A78C;
+        width: 900px;
+        height: 57px;
+        top: 1900px;
+        left: 425px;
+        position: absolute;
+    }
+
+    .project1{
+        width: 225px;
+        height: 310px;
+        left: 250px;
+        top: 2000px;
+        position: absolute;
+    }
+
+    .project2{
+        width: 225px;
+        height: 310px;
+        left: 550px;
+        top: 2000px;
+        position: absolute;
+    }
+
+    .project3{
+        width: 225px;
+        height: 310px;
+        left: 850px;
+        top: 2000px;
+        position: absolute;
+    }
+
+    .projecttitle2{
+        font-family: cantata-one;
+        font-size: 50px;
+        color: #90A78C;
+        width: 900px;
+        height: 57px;
+        top: 2350px;
+        left: 80px;
+        position: absolute;
+    }
+
+    .project4{
+        width: 225px;
+        height: 310px;
+        left: 250px;
+        top: 2425px;
+        position: absolute;
+    }
+
+    .project5{
+        width: 225px;
+        height: 310px;
+        left: 550px;
+        top: 2425px;
+        position: absolute;
+    }
+
+    .project6{
+        width: 225px;
+        height: 310px;
+        left: 850px;
+        top: 2425px;
+        position: absolute;
+    }
+
+    .page4 {
+        background-color: #C4C8BA;
+        width: 1440px;
+        height: 920px;
+        left: 3px;
+        top: 0px; 
+    }
+
+    .process{
+        font-family: cantata-one;
+        font-size: 55px;
+        color: #ffffff;
+        letter-spacing: 0;
+        line-height: normal;
+        left: 80px;
+        top: 2850px;
+        height: 82px;
+        width: 356px;
+        position: absolute;
+    }
+
+    .process1{
+        width: 412px;
+        height: 610px;
+        top: 2950px;
+        left: 325px;
+        position: absolute;
+    }
+
+    .process2{
+        width: 325px;
+        height: 410px;
+        top: 2950px;
+        left: 800px;
+        position: absolute;
+    }
+
+    .process3{
+        width: 325px;
+        height: 170px;
+        top: 3390px;
+        left: 800px;
+        position: absolute;
+    }
+
+    .page5{
+        background-color: #F1E8E0;
+        width: 1440px;
+        height: 920px;
+        left: 3px;
+        top: 0px; 
+    }
+
+    .contact{
+        font-family: cantata-one;
+        font-size: 55px;
+        color: #90A78C;
+        letter-spacing: 0;
+        line-height: normal;
+        left: 80px;
+        top: 3800px;
+        height: 82px;
+        width: 356px;
+        position: absolute;
+    }
+
+    .word4{
+        font-family: cantata-one;
+        font-size: 40px;
+        color: #90A78C;
+        width: 800px;
+        height: 90px;
+        top: 3900px;
+        left: 100px;
+        position: absolute;
+    }
+
+    .word5{
+        font-family: cantata-one;
+        font-size: 35px;
+        color: #90A78C;
+        width: 300px;
+        height: 50px;
+        top: 4150px;
+        left: 200px;
+        position: absolute;
+    }
+
+    .word6{
+        font-family: cantata-one;
+        font-size: 35px;
+        color: #90A78C;
+        width: 300px;
+        height: 50px;
+        top: 4250px;
+        left: 200px;
+        position: absolute;
+    }
+
+    .word7{
+        font-family: cantata-one;
+        font-size: 35px;
+        color: #90A78C;
+        width: 800px;
+        height: 50px;
+        top: 4350px;
+        left: 200px;
+        position: absolute;
+    }
+
+    .instagram{
+        width: 74px;
+        height: 74px;
+        top: 4170px;
+        left: 100px;
+        position: absolute;
+    }
+
+    .whatsapp{
+        width: 74px;
+        height: 74px;
+        top: 4270px;
+        left: 100px;
+        position: absolute;
+    }
+
+    .email{
+        width: 74px;
+        height: 74px;
+        top: 4370px;
+        left: 100px;
+        position: absolute;
+    }
+
+
+    </style>
+    </head>
 <body>
-    Hellooo guysss
+    <nav>
+        <ul>
+            <li><a href ="#Home">Home</a></li>
+            <li><a href ="#Profile">Profile</a></li>
+            <li><a href ="#Project">Project</a></li>
+            <li><a href ="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="page1"> 
+        <div class="hello">Hello,</div>
+        <div class="i-am-cassandra-lawrent">I am Cassandra Lawrent</div>
+        <div class="a-fashion-designer">A FASHION DESIGNER</div>
+        <div class="rectangle1green"></div>
+        <div class="rectangle2white"></div>
+        <img class="profilepic"src="profilepic.png"/>
+    </div> 
+
+    <div class="page2">
+        <div class="about-me">About Me</div>
+        <img class="stylingpic"src="stylingpic.png"/>
+        <p class="word1">I am Fashion Designer who believes in uniqueness of self expression. I aim to channelize my energy into creating the unusual and giving more than what I consume 
+        in terms of knowledge, content and eternal experiences, that help me grow as individual. 
+        <br/>I have been working in a fashion industry for 5 years. Before I start this passion I had 
+        take the course and self-taught.</p>
+        <div class="hobbies">Hobbies</div>
+        <img class="hobbies1" src="hobbies1.png"/>
+        <img class="hobbies2" src="hobbies2.png"/>
+        <img class="hobbies3" src="hobbies3.png"/>
+        <img class="hobbies4" src="hobbies4.png"/>
+        <div class="skill">Skill</div>
+        <p class="styling">Styling</p>
+        <p class="designing">Designing</p>
+        <p class="sketching">Sketching</p>
+        <p class="creative-artwork">Creative Artwork</p>
+        <div class="experience">Experience</div>
+        <p class="dream-land-lifestyle">Dream Land Lifestyle 2019 2021 as Fashion Designer</p>
+        <p class="word2">I was held responsible for helping the models choose what is best for 
+            them to wear during every fashion events. I managed to do the job properly.</p>
+        <p class="beauty-of-fashion">Beauty of Fashion 2021-2022 as Fashion Designer</p>
+        <p class="word3">1. Developed and introduced designs fashion
+            <br />2. Prepared technical sketches and drawing of ideas
+            <br />3. Conducted product research and discovered new trends</p>
+    </div>
+
+    <div class="page3">
+        <div class="project">Project Design</div>
+        <img class="line1" src="Line1.png"/>
+        <div class="projecttitle1">Engangement Gown</div>
+        <img class="project1" src="project1.png"/>
+        <img class="project2" src="project2.png"/>
+        <img class="project3" src="project3.png"/>
+        <div class="projecttitle2">Modern Batik</div>
+        <img class="project4" src="project4.png"/>
+        <img class="project5" src="project5.png"/>
+        <img class="project6" src="project6.png"/>
+    </div>
+
+    <div class="page4">
+        <div class="process">Process</div>
+        <img class="process1" src="process1.png"/>
+        <img class="process2" src="process2.png"/>
+        <img class="process3" src="process3.png"/>
+    </div>
+
+    <div class="page5">
+        <div class="contact">Contact</div>
+        <p class="word4">Self Manufactured Dresses
+            <br />Free to look some information.
+            <br />Custom made for rent / buy. Get your book now!</p>
+        <p class="word5">@dafodilluxury</p>
+        <p class="word6">08112233445566</p>
+        <p class="word7">daffodilluxury@gmail.com</p>
+        <img class="instagram" src="instagramicon.png"/>
+        <img class="whatsapp" src="whatsappicon.png"/>
+        <img class="email" src="emailicon.png"/>
+    </div>
 </body>
 </html>
